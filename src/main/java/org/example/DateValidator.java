@@ -6,7 +6,7 @@ import java.time.format.DateTimeParseException;//TIP To <b>Run</b> code, press <
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class DateValidator {
     public static boolean isValid(String date, String format) {
-        try {
+        try { 
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
             LocalDate.parse(date, formatter);
             return true;
